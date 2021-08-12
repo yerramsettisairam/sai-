@@ -1,0 +1,54 @@
+body{
+    background-color:grey;
+}
+h1{
+    background-color: brown;
+    text-align: center;
+}
+p{
+    color:brown;
+}
+address{
+    color:greenyellow;
+}
+blockquote{
+    color:greenyellow;
+}
+header{
+    background-color: cadetblue;
+    text-align: center;
+    width:80%;
+    margin:20px;
+    border-width: 2px;
+    border-style: solid black;
+    border-radius: 5px;
+}
+footer{
+    background-color: cadetblue;
+    text-align: center;
+    width:80%;
+    margin:20px;
+    border-width: 2px;
+    border-style: solid black;
+    border-radius: 5px;
+    color:black;
+}
+article{
+    background-color: cadetblue;
+    text-align: center;
+    width:80%;
+    margin:20px;
+    border-width: 2px;
+    border-style: solid black;
+    border-radius: 5px;
+    color:black;
+}
+aside{
+    color:whitesmoke;
+    float: left;
+    width: 120px;
+    font-family: tahoma;
+}
+form input[type]{
+    color: orange;
+}

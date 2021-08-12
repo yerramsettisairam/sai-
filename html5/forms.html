@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>html form</title>
+        <link rel=stylesheet href=class1.css>
+    </head>
+    <body>
+        <form  style="background-color:cadetblue" method="POST" action="./ap/register" required>
+         <h5 style="text-align: center;">REGISTER FORM</h5>
+         <label for="fname">firstname:</label>
+         <input type="text" id="firstname" name="firstname" value="sai" readonly><br><br>
+         <label for="lname">lastname:</label>
+         <input type="text" id="lastname" name="lastname"><br><br>
+         <label for="email">email:</label>
+         <input type="email" id="email" name="email"placeholder="enter the email"><br><br>
+         <label for="password">password:</label>
+         <input type="password" id="password" name="password"><br><br>
+         <label for="gender">gender:</label>
+         <input type="radio" id="gender" name="gender">male
+         <input type="radio" id="gender" name="gender">female
+         <input type="radio" id="gender" name="gender">other<br><br>
+         <label for="language">language:</label>
+         <input type="checkbox"id="language"name="language">english
+         <input type="checkbox"id="language"name="language">telugu
+         <input type="checkbox"id="language"name="language">kannada<br><br> 
+         <label for="date of birthday">date of birth</label>
+         <input type="date" id="date of birthday"><br><br>
+         <textarea id="feedback" name="feedback" rows="10" cols="20"placeholder="feedback"></textarea><br>
+         <label for="qualification">education</label>
+         <select id="qualification" name="qualification">
+             <option value="ssc">ssc</option>
+             <option value="intermediate">intermediate</option>
+             <option value="B.E/B.TECH" selected>B.TECH</option>
+             <option value="post graduation">post graduation</option>
+         </select><br><br>
+        <label for="file">choose file</label>
+        <input type="file" id="file"name="resume">
+        <fieldset>
+            <legend>employee details </legend>
+            <label for="fname">firstname:</label>
+            <input type="text" id="firstname" name="firstname"><br><br>
+            <label for="lname">lastname:</label>
+            <input type="text" id="lastname" name="lastname"><br><br>
+            <label for="password">password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <label for="gender">gender:</label>
+            <input type="radio" id="gender" name="gender">male
+            <input type="radio" id="gender" name="gender">female
+            <input type="radio" id="gender" name="gender">other<br><br>
+        </fieldset>
+         <input type="button" value="submit">
+         <input type="reset" value="clear">
+        </form>
+    </body>
+</html>
