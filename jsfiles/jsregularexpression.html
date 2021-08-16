@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>js regular expression</title>
+</head>
+
+<body>
+    <div id="result"> </div>
+    <script>
+       var text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum";
+       //var value =text.search(/industry/i);
+     var value=text.replace(/Ipsum/gi,"simple");
+       document.getElementById("result").innerHTML=value;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+h1{
+    text-align: center;
+    background-color: tomato;
+}
+#d{
+    border:2px solid blue;
+    background-color: aquamarine;
+    position: fixed;
+}
+#i{
+    border: 1px solid red;
+    background-color: brown;
+  /*  position: relative;
+    top: 20px;
+    left: 20px;
+}
+#v{
+    border: 1px solid pink;
+    background-color: chartreuse;
+    position: absolute;
+    top: 15px;
+    left: 15px;*/
+}
+#a{
+    border: 2px solid orange;
+    background-color: white;
+    position: sticky;
+}
+ul li{
+    display: inline;
+    color: tomato;
+}
+span {
+    display: block;
+    color: teal;
+}
+/*descentant selector*/
+/*div p {
+    color: teal;
+}*/
+/*child selector*/
+/*div>p{
+    color:blue;
+}*/
+/*adjacent sibling selector*/
+/*div+p{
+    color: blueviolet;
+}*/
+/*general sibling selector*/
+div~p{
+    color: brown;
+}

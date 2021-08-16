@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css combinator selector</title>
+        <style>
+            /*desecent selector*/
+/*div p{
+    color: blue;
+}*/
+/* child selector*/
+/*div>p,section{
+    color: brown;
+}*/
+/*adjacent sibling selector*/
+div+p{
+    color: chartreuse;
+}
+/*general sibling selector*/
+div ~ p {
+    color: darkgreen;
+}
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>this is paragraph</p>
+            <p>this is paragraph</p>
+        <section><p>this is paragraph</p></section>
+            <p>this is paragraph</p>
+        </div>
+        <p>this is paragraph</p>
+        <p>this is paragraph</p>
+    </body>
+</html>

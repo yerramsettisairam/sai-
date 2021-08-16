@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>js events</title>
+    <script>
+        function myfunction() {
+        document.getElementById('sai').innerHTML=Date();
+        }
+
+    </script>
+</head>
+
+<body>
+    <p id="sai"></p><br>
+<!--<button type="button" onmouseover="myfunction">help</button>-->
+   <button onmouseover="document.getElementById('sai').innerHTML=Date()">show</button>
+</body>
+
+</html>

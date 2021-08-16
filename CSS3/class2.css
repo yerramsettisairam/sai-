@@ -1,0 +1,84 @@
+h1{
+    background-color: blue;
+    color: cornsilk;
+    text-align: center;
+}
+.sai{
+    color: darkred;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+    letter-spacing: 4px;
+}
+#sai{
+    color: darkslateblue;
+}
+#o{
+    border: orangered 2px solid;
+    border-radius: 5px;
+    border-width: 6px;
+    outline: gold 3px solid;
+    padding: 5px 10px;
+    margin: 5px 5px 10px 10px;
+    background-color: grey;
+    color: white;
+    text-align: justify;
+    text-decoration: overline;
+    text-transform: lowercase;
+    text-indent:40px;
+    text-shadow: 2px 2px black;
+    opacity: 1.0;
+}
+a:link{
+    color:red;
+}
+a:hover{
+    color: blue;    
+}
+a:visited{
+    color:green;
+}
+a:active{
+    color:maroon;
+}
+body{
+    background-image: url(https://wallpapercave.com/wp/wc1786810.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.ram{
+    list-style-type: disc;
+    color: beige;
+}
+.y{
+    list-style-type: upper-roman;
+}
+table,th,td{
+    border: 2px solid red;
+    border-collapse: collapse;
+}
+th{
+    background-color: burlywood;
+}
+#table tr:hover{
+    background-color: white;
+    color: black;
+}
+#table tr:nth-child(odd){
+    background-color: darkorange;
+    color: white;
+}
+.p{
+    max-width: 800px;
+    border: 1px solid red;
+    color: honeydew;
+    overflow: scroll;
+}
+.p2{
+    width: 400px;
+    border: 2px solid salmon;
+    color: honeydew;
+    float:left;
+}

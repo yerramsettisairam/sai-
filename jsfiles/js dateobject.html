@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>date object</title>
+</head>
+
+<body>
+    <script>
+        const d = new Date();
+        console.log(d);
+
+        //year;
+        const year = d.getFullYear();
+        console.log(year);
+
+        //month;
+        console.log('this is a month');
+        const month = d.getMonth();
+        console.log(month);
+
+        //day;
+        console.log('this is a day')
+        const day = d.getDate();
+        console.log(day);
+
+        //we can set the year;
+        console.log('we can set the year');
+        const y = new Date();
+        y.setFullYear(2022);
+        console.log(y);
+
+        y.setMonth(11);
+        console.log(y);
+       
+        y.setSeconds(45);
+        console.log(y);
+    </script>
+</body>
+
+</html>

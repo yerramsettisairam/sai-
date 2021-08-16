@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>css attribute selector</title>
+    <style>
+        a[target="_blank"]{
+            background-color: red;
+            color: white;
+        }
+       div[title~="child"]{
+           background-color: yellowgreen;
+           color: whitesmoke;
+       }
+    </style>
+</head>
+<body>
+<a href="#">home</a>
+<a href="#" target="_blank">contact</a>
+<a href="#" target="">about</a>
+<div title="sai child">sairam</div>
+<div title="parent child">service</div>
+<div title="child">service</div>
+
+
+</body>
+
+</html>
