@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>string object methods </title>
+    </head>
+    <body>
+        <script>
+let a = "  iam using string object method in javascript   "
+let b = "here iam using some method in strings"
+console.log(a.charAt(2));  /*it will tell about the character position */
+console.log(a.length);     /* it show the string length*/
+console.log(a.trim());     /*it will delete space surrounded the string*/
+console.log(a.concat(b));  /*it will merge the var a and b*/
+console.log(a.charCodeAt()); /*it show the unicode of the partical character*/
+console.log(a.lastIndexOf("t")); /*it will show the last character index position*/
+console.log(a.indexOf("m"));    /*it will show the position of the character index*/
+console.log(a.replace("javascript","js")); /* it will replace the old string with new string*/
+console.log(a.search("i")); /*it will search the character index*/
+console.log(a.endsWith("   ")); /*if it is end with space then it wil show the true value other wise false*/
+console.log(a.includes('the')); /*if the word is there in that variable it show true value*/
+console.log(a.slice(0,7)); /*it will  start index and stop index 0 ,7*/
+console.log(a.substring(0,15));
+      
+
+let c = new String("hello world welcome to my world")
+ document.write(c.toUpperCase()); 
+ document.write(c.length);
+        </script>
+    </body>
+</html>

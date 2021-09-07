@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+    //round off all the decimal numbers in an array and sum all the values
+            num = [1.5, 2.5, 3.5, 4.5]
+            var result = num.reduce((total, val) => {
+                return (Math.round(total)+Math.round(val));
+            });
+            console.log(result);
+
+
+            //get the value of the first element in an array that has value greater than 20
+    num1 = [11,15, 21, 25, 50]
+    var findVal = num1.find(val => {
+      return val > 20;
+    });
+    console.log(findVal);
+
+
+    //get the value of the first element in an array that has value less than 2
+    num2 = [0, 1, 15, 21, 35, 50]
+    var findVal = num2.find(val => {
+      return val < 2;
+    });
+    console.log(findVal);
+
+    //filter data based on a id(property) in an array of objects
+    let emps = [{ id: 1, name: 'sai' }, { id: 2, name: 'siva' }, { id: 3, name: 'ram' }];
+
+    let empdetalis = emps.filter(n => { 
+      return n.id < 2
+     });
+    console.log(empdetalis);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            class animal{
+                constructor(speak,walk,eat,fly){
+                    this.speak = speak;
+                    this.walk = walk;
+                    this.eat = eat;
+                    this.fly = fly;
+                }
+            }
+
+            class cat extends animal{
+                constructor(speak,walk,eat){
+                    super(eat);
+                    this.speak=speak;
+                    this.walk= walk;
+                }
+            }
+
+            class crow extends animal{
+                constructor(speak,fly,eat){
+                    super(eat);
+                    this.speak=speak;
+                    this.fly = fly;
+
+                }
+            }
+
+            const tospeak = new cat ('meow meow','jump','milk');
+            console.log(tospeak);
+            const towalk = new crow ('cow cow','fly in air','beans');
+            console.log(towalk);
+
+            let person =[{name:'sai',age:'19'},{name:'ram', age:'20'},{name:'karem' ,age:'17'}]
+            let person1 = person.map(val=>{
+                if(val.age < 18){
+                    console.log('inside the age lessthan 18 not eligible',val.name);
+                }else if(val.age > 18){
+                    console.log('inside the age greaterthan 18 eligible',val.name);
+                }else{
+                    console.log('inside the age is 18 eligible for vote ',val.name);
+                }
+            })
+        </script>
+    </body>
+</html>

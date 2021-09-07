@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>nestedfor loop</title>
+    </head>
+    <body>
+        <script>
+            // in this nested loop if u use three variable it will form pyramid and two variable for triangle.
+           //  and also nestedloop means forloop inside the forloop;
+            let  i, j, k;
+
+            for(i=1; i<=10; i++)
+            {
+                for(k=1; k<=(10-i); k++)
+                {
+                    document.write("&nbsp");
+                }
+
+                for(j=1; j<=i; j++)
+                {
+                    document.write("*");
+                }
+                document.write("</br>");
+            }
+
+        </script>
+    </body>
+</html>

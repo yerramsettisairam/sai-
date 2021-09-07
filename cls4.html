@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+<script>
+    // inheritance
+// class Parent {
+// }
+// class Child extends Parent {
+// }
+
+// parent class
+class Shape {
+    constructor(sId) {
+        // sId = 20;
+        this.id = 20;
+    }
+
+    shapeData() {
+        console.log("shapeData");
+    }
+}
+
+class Square extends Shape {
+
+}
+
+// derived/child class
+class Circle extends Shape {
+    constructor(id, radius) {
+        super(id);//call the constructor of parent class
+        // this.id = id;
+        this.radius = radius;
+    }
+
+    circleData() {
+        console.log("circleData");
+    }
+}
+
+const myCircle = new Circle(10, 5);//id radius
+console.log(myCircle);//10 5
+myCircle.circleData();//
+myCircle.shapeData();//
+
+const shape = new Shape();
+shape.shapeData();//
+//shape.circleData();//give you an error
+
+
+// enhanced object literal
+
+// create a object earlier
+// var person = {
+//     firstName : "Duke",
+//     designation : "developer",
+//     age : 25,
+//     fullName = function () {
+//     console.log(this.firstName);
+// }
+// }
+
+// restructuring of object
+var firstName = "Duke";
+var designation = "developer";
+var ageVal = 25;
+
+// var fullName = function () {
+//     console.log(firstName);
+// }
+
+fullName = () => {
+    console.log(firstName)
+}
+
+var user = {
+    firstName,
+    designation,
+    ageVal,
+    fullName
+}
+
+console.log(user);
+
+// New syntax without function keyword for object method
+
+var employee = {
+    id: 2,
+    salary: 200000,
+    information() {
+        console.log(this.salary);
+    }
+}
+
+employee.information();
+
+// destructuring of object
+const { id, salary } = employee;
+console.log(id);//
+console.log(salary);//
+
+// task
+// parent: animal(speak, walk, climb, fly)  child:dog(eat), child:crow()
+//get all the person name based on age greater than and equal to 18, eligible to vote 
+// [{
+//     firstName: 'joe',
+//     age: 24
+// }, {
+//     firstName: 'alina',
+//     age: 12
+// },
+// {
+//     firstName: 'alex',
+//     age: 20
+// }
+// ]
+
+</script>
+</body>
+</html>

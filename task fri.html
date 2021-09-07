@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+        //sum of all the element of an array [10,20,40,60,100]
+        num = [10,20,40,60,100]
+        var result = num.reduce((total,val)=>{
+            return (total+val);
+        });
+        console.log(result);
+
+        //check all element is odd or even in an array
+        arr1 = [2,3,6,5,7,10]
+        var result1 = arr1 .map(val=>{
+            if(val%2==0){
+                console.log('if number is even it will display',val);
+            }else{
+                console.log('if the number is odd it will display',val);
+            }
+        });
+
+        //check the sum of salarys array in an object
+
+        num1 = [{salary:25000},{salary:75000}];
+        var result2 = num1.reduce((total,val) => {
+            return (total.salary+val.salary);
+        });
+        console.log(result2);
+        </script>
+    </body>
+</html>

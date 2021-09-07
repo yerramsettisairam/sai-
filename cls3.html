@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            // class: template for js objects
+
+var x = 10;//declaration & initialization
+
+class University {
+    // constructor is used to intialize the value
+
+    constructor(dept, first) {
+        this.department = dept;
+        this.firstName = first;
+        this.age = 20;
+    }
+
+    library() {
+        console.log(this.department);
+        console.log('has access to library');
+    }
+
+    sports() {
+        console.log('has access to sports department');
+    }
+}
+
+const student_one = new University('cse', 'alex');//create object to refer to class
+console.log(student_one);
+student_one.library();
+
+const student_two = new University('ece', 'alina');
+console.log(student_two);
+student_two.sports();
+
+class Colors {
+    constructor(name) {
+        this.color = "pink";
+        this.name = name;
+    }
+
+    // intensity() {
+    //     console.log(this.color);
+    //     console.log("Intensity of " + this.color + " is 2");
+    // }
+}
+
+const colorName = new Colors("red");
+// console.log(colorName.color);
+// colorName.intensity();
+        </script>
+    </body>
+</html>
